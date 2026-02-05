@@ -39,7 +39,7 @@ export const update = catchErrors(async (req, res) => {
 });
 
 export const remove = catchErrors(async (req, res) => {
-  const issue = await deleteEntity(Issue, req.params.issueId);
+  const issue = deleteEntity(Issue, req.params.issueId);
   res.respond({ issue });
 });
 

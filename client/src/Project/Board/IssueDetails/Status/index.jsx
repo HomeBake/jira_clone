@@ -10,6 +10,7 @@ import { Status } from './Styles';
 const propTypes = {
   issue: PropTypes.object.isRequired,
   updateIssue: PropTypes.func.isRequired,
+  extraProp: PropTypes.string.isRequired,
 };
 
 const ProjectBoardIssueDetailsStatus = ({ issue, updateIssue }) => (
