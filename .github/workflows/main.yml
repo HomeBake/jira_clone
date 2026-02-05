@@ -37,11 +37,8 @@ jobs:
           VCS__HTTP_CLIENT__API_TOKEN: ${{ secrets.T_GITHUB_TOKEN }}
 
           # --- Prompt configuration ---
-          PROMPT__INLINE_PROMPT_FILES: '["./ai-review/prompt/inline/strict.md"]'
-          PROMPT__CONTEXT_PROMPT_FILES: '["./ai-review/prompt/inline/strict.md"]'
+          PROMPT__INLINE_PROMPT_FILES: '["./ai-review/prompt/inline/light.md"]'
           PROMPT__SUMMARY_PROMPT_FILES: '["./ai-review/prompt/summary/strict.md"]'
-          PROMPT__INLINE_REPLY_PROMPT_FILES: '["./ai-review/prompt/inline_reply/strict.md"]'
-          PROMPT__SUMMARY_REPLY_PROMPT_FILES: '["./ai-review/prompt/summary_reply/strict.md"]'
           REVIEW__MODE: "FULL_FILE_CURRENT"
 
           LOGGER__LEVEL: "DEBUG"
